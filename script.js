@@ -22,3 +22,14 @@ loginForm.addEventListener('submit', (e) => {
         errorMsg.textContent = 'Invalid email or password.';
     }
 });
+
+// Basic attempts to discourage viewing source/inspect
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+document.addEventListener('keydown', (e) => {
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase()))
+    ) {
+        e.preventDefault();
+    }
+});
