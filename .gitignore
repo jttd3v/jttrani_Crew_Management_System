@@ -1,5 +1,0 @@
-# Ignore node modules and build artifacts
-node_modules/
-dist/
-.env
-contract-generator/backend/node_modules/
