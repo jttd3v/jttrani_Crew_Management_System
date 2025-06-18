@@ -10,6 +10,7 @@ This repository provides a simple login page and a KPI Dashboard module used for
   - **Retention Rate** – percentage of crew with at least two contracts or over one year tenure
   - **Incident Trend** – monthly count of P&I or safety incidents
 - Utility-first styling with Tailwind CSS
+- **Salary Scale Manager** – maintain yearly salary scale history by crew rank
 
 ## Setup
 
@@ -35,6 +36,16 @@ Open `dashboard/index.html` in your browser. It fetches data from the API endpoi
 - `/api/joining-ratio?month=YYYY-MM`
 - `/api/retention-rate`
 - `/api/incidents?start=YYYY-MM&end=YYYY-MM`
+
+### Salary Scale Manager
+1. Start the salary scale API:
+   ```bash
+   cd salary-scale-manager/backend
+   npm install
+   npm start
+   ```
+   The API will run on `http://localhost:3002`.
+2. Open `salary-scale-manager/frontend/index.html` in your browser to manage yearly salary scales by rank.
 
 ## Development
 Pull requests are welcome. Please open an issue first to discuss changes.
