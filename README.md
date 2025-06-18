@@ -1,28 +1,47 @@
-# Crew Management System Login Demo
+# Crew Management System
 
-This repository contains a simple responsive login page for a Crew Management System.
+This repository provides a simple login page and a KPI Dashboard module used for crew management. The dashboard is built with **React** and **Chart.js**, while a small **Node.js** API serves data from MySQL.
 
 ## Features
 
-- Username/email and password fields
-- Error message display for invalid input
-- Password visibility toggle
-- Maritime-themed background with 50% opacity
-- Animated wave effect at the bottom of the page
-- Responsive design optimized for desktop and mobile
+- Responsive login page (demo)
+- KPI Dashboard
+  - **Joining Ratio** – total crew joined vs. expected onboard per month
+  - **Retention Rate** – percentage of crew with at least two contracts or over one year tenure
+  - **Incident Trend** – monthly count of P&I or safety incidents
+- Utility-first styling with Tailwind CSS
 
-## Usage
+## Setup
 
-1. Clone the repository.
-2. Open `index.html` in your browser or serve the directory with a local web server.
+### Backend API
+1. Install Node.js and MySQL.
+2. Create a `.env` file in `server/` with database credentials:
+   ```ini
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=secret
+   DB_NAME=crewdb
+   ```
+3. Install dependencies and start the server:
+   ```bash
+   cd server
+   npm install
+   npm start
+   ```
+   The API will run on `http://localhost:3001`.
 
-This page is for demonstration purposes only. It performs a very basic front-end credential check and **should not** be used in production without a proper backend and secure authentication mechanism.
+### Frontend
+Open `dashboard/index.html` in your browser. It fetches data from the API endpoints:
+- `/api/joining-ratio?month=YYYY-MM`
+- `/api/retention-rate`
+- `/api/incidents?start=YYYY-MM&end=YYYY-MM`
 
-### Can I hide the page source?
-
-No. Modern browsers allow users to view HTML, CSS, and JavaScript that are served to them. You can try techniques such as disabling the context menu or key shortcuts and minifying/obfuscating code, but a determined user can still access the source. Security should rely on robust server-side code rather than hiding client-side files.
-
-## Contributing
-
+## Development
 Pull requests are welcome. Please open an issue first to discuss changes.
 
+## Testing
+Run the following in the `server` directory:
+```bash
+npm test
+```
+(Currently no automated tests are defined.)
