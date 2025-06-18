@@ -39,9 +39,3 @@ Open `dashboard/index.html` in your browser. It fetches data from the API endpoi
 ## Development
 Pull requests are welcome. Please open an issue first to discuss changes.
 
-## Testing
-Run the following in the `server` directory:
-```bash
-npm test
-```
-(Currently no automated tests are defined.)
