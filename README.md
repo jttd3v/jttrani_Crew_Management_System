@@ -39,3 +39,9 @@ Open `dashboard/index.html` in your browser. It fetches data from the API endpoi
 ## Development
 Pull requests are welcome. Please open an issue first to discuss changes.
 
+
+## Seafarer Application Form
+
+The `seafarer-form` directory contains a responsive application form for crew applicants. It consists of a small Express API and a React-based frontend. Submitted data is stored in the `seafarer_applications` MySQL table along with the applicant's IP address and submission time.
+
+To set it up, follow the instructions in `seafarer-form/README.md`.
