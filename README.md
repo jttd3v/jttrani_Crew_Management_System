@@ -26,3 +26,14 @@ No. Modern browsers allow users to view HTML, CSS, and JavaScript that are serve
 
 Pull requests are welcome. Please open an issue first to discuss changes.
 
+
+## Contract Generator (prototype)
+
+The `contract-generator` directory contains a proof-of-concept React/Node.js module for generating crew contracts. It demonstrates:
+
+- Dropdowns populated from a MySQL database.
+- Auto-fetching salary scales based on vessel, rank, and year.
+- PDF generation using jsPDF.
+- Simple REST backend written in Express.
+
+See `contract-generator/README.md` for setup instructions.
