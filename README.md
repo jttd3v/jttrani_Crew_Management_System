@@ -11,6 +11,7 @@ This repository provides a simple login page and a KPI Dashboard module used for
   - **Incident Trend** – monthly count of P&I or safety incidents
 - Utility-first styling with Tailwind CSS
 - **Salary Scale Manager** – maintain yearly salary scale history by crew rank
+- **Seafarer Application Form** – collect applicant data with a responsive React form
 
 ## Setup
 
@@ -46,6 +47,9 @@ Open `dashboard/index.html` in your browser. It fetches data from the API endpoi
    ```
    The API will run on `http://localhost:3002`.
 2. Open `salary-scale-manager/frontend/index.html` in your browser to manage yearly salary scales by rank.
+
+### Seafarer Application Form
+Open `seafarer-application/frontend/index.html` in your browser and submit the required details. The form posts to `/api/applications` on the main API.
 
 ## Development
 Pull requests are welcome. Please open an issue first to discuss changes.
